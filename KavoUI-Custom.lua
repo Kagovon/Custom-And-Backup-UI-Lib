@@ -222,12 +222,12 @@ function Kavo.CreateLib(kavName, themeList)
     blurFrame.ZIndex = 999
 
     ScreenGui.Parent = game.CoreGui
-    ScreenGui.Name = "Dragonium"
+    ScreenGui.Name = "ScreenGui"
     ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     ScreenGui.ResetOnSpawn = false
 
     Main.Name = "Main"
-    Main.Parent = Dragonium
+    Main.Parent = ScreenGui
     Main.BackgroundColor3 = themeList.Background
     Main.ClipsDescendants = true
     Main.Position = UDim2.new(0.336503863, 0, 0.275485456, 0)
