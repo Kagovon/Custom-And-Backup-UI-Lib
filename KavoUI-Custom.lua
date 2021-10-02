@@ -208,7 +208,7 @@ function Kavo.CreateLib(kavName, themeList)
     local pages = Instance.new("Frame")
     local Pages = Instance.new("Folder")
     local infoContainer = Instance.new("Frame")
-    local Scr = game.Coregui.LibName
+    local Scr = game.CoreGui[LibName]
     local blurFrame = Instance.new("Frame")
 
     Kavo:DraggingEnabled(MainHeader, Main)
