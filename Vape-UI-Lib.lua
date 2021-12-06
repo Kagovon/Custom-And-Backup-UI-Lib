@@ -31,10 +31,7 @@ ui.Name = VapeName
 ui.Parent = game.CoreGui
 ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-function breh:DestroyUI()
-	game.CoreGui[VapeName]:Destroy()
-end
-return bruh
+
 
 
 coroutine.wrap(
@@ -196,6 +193,10 @@ function lib:Window(text, preset, closebind)
         PresetColor = toch
     end
 
+    function lib:DestroyUI(toch)
+        game.CoreGui[VapeName]:Destroy()
+    end
+	
     function lib:Notification(texttitle, textdesc, textbtn)
         local NotificationHold = Instance.new("TextButton")
         local NotificationFrame = Instance.new("Frame")
