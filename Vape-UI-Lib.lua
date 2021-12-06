@@ -6,6 +6,7 @@ local LocalPlayer = game:GetService("Players").LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local PresetColor = Color3.fromRGB(44, 120, 224)
 local CloseBind = Enum.KeyCode.RightControl
+local breh = {}
 
 local letters = {"Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Z", "X", "C", "V", "B", "N", "N", "M"} -- etc.
 local length = 18
@@ -29,6 +30,12 @@ local ui = Instance.new("ScreenGui")
 ui.Name = VapeName
 ui.Parent = game.CoreGui
 ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+function breh:DestroyUI()
+	game.CoreGui[VapeName]:Destroy()
+end
+return bruh
+
 
 coroutine.wrap(
     function()
