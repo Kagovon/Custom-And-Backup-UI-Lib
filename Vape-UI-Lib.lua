@@ -46,11 +46,6 @@ coroutine.wrap(
         end
     end
 )()
-local lol = {}
-function lol:DestroyUI()
-	game.CoreGui[VapeName]:Destroy
-	end
-return lol
 
 local function MakeDraggable(topbarobject, object)
     local Dragging = nil
