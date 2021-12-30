@@ -470,7 +470,7 @@ function lib:Window(text, preset, closebind)
 			
 	    if lol == true then
 		ButtonTitle.TextXAlignment = Enum.TextXAlignment.Center
-		ButtonTitle.Size = UDim2.new(1, 0, 1, 0)		
+		ButtonTitle.Size = UDim2.new(0.90, 0, 1, 0)		
 	    else
 		ButtonTitle.TextXAlignment = Enum.TextXAlignment.Left
 	    end
