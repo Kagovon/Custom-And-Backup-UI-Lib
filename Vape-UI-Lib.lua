@@ -436,7 +436,8 @@ function lib:Window(text, preset, closebind)
             end
         )
         local tabcontent = {}
-        function tabcontent:Button(text, callback)
+        function tabcontent:Button(text, lol, callback)
+	    lol = lol or false
             local Button = Instance.new("TextButton")
             local ButtonCorner = Instance.new("UICorner")
             local ButtonTitle = Instance.new("TextLabel")
@@ -466,7 +467,12 @@ function lib:Window(text, preset, closebind)
             ButtonTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             ButtonTitle.TextSize = 14.000
             ButtonTitle.TextXAlignment = Enum.TextXAlignment.Left
-
+			
+	    if lol == true then
+		ButtonTitle.TextXAlignment = Enum.TextXAlignment.Center
+	    else
+		ButtonTitle.TextXAlignment = Enum.TextXAlignment.Left
+	    end
             Button.MouseEnter:Connect(
                 function()
                     TweenService:Create(
