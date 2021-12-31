@@ -1,10 +1,5 @@
 local VapeName = "Seria" .. "-" .. "Hub" .. "-" .. "UwU"
 
-if game.CoreGui[VapeName] then
-	game.CoreGui[VapeName]:Destroy()
-	return
-end
-
 local lib = {RainbowColorValue = 1, HueSelectionPosition = 0}
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
