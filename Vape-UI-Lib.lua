@@ -5,7 +5,7 @@ if game.CoreGui[VapeName] then
 	return
 end
 
-local lib = {RainbowColorValue = 1 HueSelectionPosition = 0}
+local lib = {RainbowColorValue = 1, HueSelectionPosition = 0}
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
